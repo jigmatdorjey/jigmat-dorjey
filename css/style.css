@@ -1,0 +1,466 @@
+/* https://mezcalrosaluna.com/ */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none; 
+    box-sizing: border-box;
+    background: #f0dcd4;
+
+    
+    /* background: #f0dcd4; */
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family:  Akkurat Pro,sans-serif; */
+    
+}
+nav{
+    /* background-color: #fff; */
+    background-color: #f0dcd4;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+
+}
+/* FIXED  */
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* box-shadow: rgba(87, 87, 87, 0.35) 0px -30px 26px -14px inset; */
+  }
+
+nav img{
+    height: 50px;
+    margin: 10px;
+    padding: 0 100px;
+   
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+    background: none;
+
+}
+
+nav ul li a{
+    color: #a45848;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 7px 13px;
+    /* padding: 7px 13px; */
+    border-radius: 3px;
+    text-transform: uppercase;
+    /* position: relative; */
+    transition: color 0.3s ease;
+    background: none;
+}
+
+.navbar {
+    border-bottom: 1px solid #a45848;
+}
+ 
+
+.checkbtn{
+    font-size: 30px;
+    color: #a45848;
+    float: right;
+    line-height: 70px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px) {
+    label img{
+    height: 45px;
+    margin: 14px;
+    padding: 0 70px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }   
+}
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f0ecec;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: #0b0b0b;
+    }
+
+    #check:checked ~ ul{
+        /* right: 0; */
+        left: 0;
+        /* left: 0; */
+    }
+
+}
+
+@media (max-width: 500px) {
+    label img{
+    margin-left: 0;
+    padding-left: 30px;
+    }
+     
+}
+/* section{
+    padding-top: 80px;
+    background: #f0dcd4 ;
+    background-srgb(215, 215, 255) cover;
+    height: calc(100vh);
+} */
+
+
+.navbar ul li a {
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Add shadow to active link inside <li> on small screens */
+@media (max-width: 858px) {
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f0ecec;
+        top: 70px;
+        left: -200%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li a.active {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow to the active link */
+    }
+}
+
+
+
+
+/* ------------- JIMMY ------------- */
+
+
+section {
+    padding-top: 14vh;
+    height: 96vh;
+    margin:0;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+
+/* -profile section */
+
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+   
+  }
+  
+  .section__text {
+    align-self: center;
+    text-align: center;
+    background: #f0dcd4;
+
+    
+  }
+  
+  .section__text p {
+    font-weight: 600; 
+     /* background: #f0dcd4; */
+
+
+
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+
+  /* BUTTONS */
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(0, 0, 0);
+  }
+  
+  .btn-color-2,.btn-color- {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+  }
+  
+
+  @media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+   
+    #profile,
+    .section-container {
+      display: block;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0;
+    }
+    .section__pic-container {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    
+   
+    .section__pic-container {
+      width: auto;
+      height: 70vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    
+  }
+  
+
+#profile{
+    padding-top: 200px;
+    /* margin-bottom: 200px; */
+    background: #f0dcd4 ;
+    background-srgb(215, 215, 255) cover;
+    height: calc(100vh);
+}
+
+
+#profile{
+  margin-bottom: 50px;
+}
+
+
+
+/* ABOUT ME */
+
+#aboutMe h1{
+  margin-top: 10%;
+  padding: 0;
+}
+
+#aboutMe{
+  margin: 0;
+  margin: 5% 10%;
+  text-align: justify;
+  height: calc( 100vh);
+  padding-top: 70px;
+
+}
+
+#aboutMe{
+  text-align: justify;
+  text-align: center;
+}
+
+#aboutMe{
+  /* padding-top: 70px; */
+}
+.text-container p{
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 450;
+  letter-spacing: 0.5px;
+  
+}
+
+@media screen and (max-width: 600px) {
+    #aboutMe{
+      padding-top: 100px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    color: #0b0b0b;
+  }
+#contact p a{
+    color: #0b0b0b;
+    text-transform: lowercase;
+}
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+    height: 2.5rem;
+    color: #0b0b0b;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  
+
+  /* ICONS */
+
+
+
+  section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+  
+ 
